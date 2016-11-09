@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/TvTitle"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPhone"
+            android:text="Phone" />
+
+        <ImageButton
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnCall"
+            android:layout_weight="0.48"
+            android:src="@android:drawable/stat_sys_phone_call" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLocation"
+            android:layout_weight="0.82"
+            android:text="Location" />
+
+        <ImageButton
+            android:layout_width="54dp"
+            android:layout_height="46dp"
+            android:id="@+id/btnLocation"
+            android:src="@android:drawable/ic_menu_mylocation" />
+    </LinearLayout>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar" />
+
+</LinearLayout>
